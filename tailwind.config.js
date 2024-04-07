@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-img': "url('assets/img/horse.webp')",
+      }
+    },
   },
   plugins: [],
 }
