@@ -1,5 +1,17 @@
+import { Footer } from "./components/Footer/Footer";
+import { Header } from "./components/Header/Header";
+import { Hero } from "./components/Hero";
+import { ProductContainer } from "./components/Products/ProductContainer";
+
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <>
+      <Header />
+      <Hero />
+      <ProductContainer />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
