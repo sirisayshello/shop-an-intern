@@ -5,12 +5,12 @@ import { ProductContainer } from "./components/Products/ProductContainer";
 
 function App() {
   return (
-    <>
+    <main>
       <Header />
       <Hero />
       <ProductContainer />
       <Footer />
-    </>
+    </main>
   );
 }
 
