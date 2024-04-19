@@ -1,17 +1,11 @@
 import { Product } from "./Product";
-import { tech } from "./tech";
+import { products } from "./products";
 
 export const ProductContainer = () => {
   return (
     <div className="flex flex-wrap">
-      {tech.map((techProduct) => {
-        return (
-          <Product
-            key={techProduct.name}
-            name={techProduct.name}
-            description={techProduct.description}
-          />
-        );
+      {products.map((product) => {
+        return <Product key={product.name} product={product} />;
       })}
     </div>
   );
