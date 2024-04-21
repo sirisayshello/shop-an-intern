@@ -1,13 +1,15 @@
-export const Footer = () => {
+import { forwardRef } from "react";
+
+export const Footer = forwardRef((_, ref) => {
   return (
-    <div className="w-full mt-16">
-      <div className="border-t border-black px-4 py-8">
+    <div ref={ref} className="w-full mt-16">
+      <div className="border-t border-black px-6 py-8">
         <h2>ABOUT</h2>
-        <h2>PREVIOUS WORK</h2>
+        <p>Some information about Siri.</p>
       </div>
-      <div className="border-t border-black px-4 py-8">
+      <div className="border-t border-black px-6 py-8">
         <h2>BASED IN GOTHENBURG</h2>
       </div>
     </div>
   );
-};
+});
