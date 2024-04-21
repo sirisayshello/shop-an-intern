@@ -1,9 +1,11 @@
-export const Bag = ({ visibility }) => {
+export const Bag = ({ visibility, large }) => {
+  const w = large ? 15 * 1.5 : 15;
+  const h = large ? 20 * 1.5 : 20;
   return (
     <svg
       className={visibility}
-      width="15"
-      height="20"
+      width={w}
+      height={h}
       viewBox="0 0 15 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
