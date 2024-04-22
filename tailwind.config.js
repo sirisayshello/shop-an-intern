@@ -6,11 +6,17 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"Inter"', 'ui-sans-serif', 'system-ui']
+      },
       backgroundImage: {
         'hero-img': "url('assets/img/horsemane.jpg')",
     },
       colors: {
-        'agile-red': '#BD2400'
+        'agile-red': '#BD2400',
+        'scrum-blue': '#30559B',
+        'waterfall-blue': "#95B7DF"
+
     },
       animation: {
 				fade: 'fadeIn .3s ease-in-out',
