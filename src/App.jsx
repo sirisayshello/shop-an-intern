@@ -20,7 +20,7 @@ function App() {
     } else {
       setTimeout(() => {
         setShowOverlay(false);
-      }, 290);
+      }, 280);
     }
   }, [isOpen, hamburgerOpen]);
 

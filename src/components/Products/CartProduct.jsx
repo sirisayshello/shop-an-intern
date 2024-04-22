@@ -1,3 +1,4 @@
+import { Heading } from "../Heading/Heading";
 import { CloseButton } from "../Menu/CloseButton";
 
 export const CartProduct = ({ product, removeFromCart }) => {
@@ -9,7 +10,7 @@ export const CartProduct = ({ product, removeFromCart }) => {
       <img className="w-28" src={product.image} alt="" />
       <div className="w-full flex flex-col justify-between">
         <div className="flex pl-4 justify-between">
-          <h3>{product.name}</h3>
+          <Heading size="h3">{product.name}</Heading>
           <button onClick={handleCLick}>
             <CloseButton />
           </button>

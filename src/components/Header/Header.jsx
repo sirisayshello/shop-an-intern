@@ -1,4 +1,5 @@
 import { useCart } from "../../hooks/useCart";
+import { Heading } from "../Heading/Heading";
 import { Hamburger } from "../Menu/Hamburger";
 import { NavBarDesktop } from "../Menu/NavBarDesktop";
 import { Bag } from "../Products/Bag";
@@ -13,10 +14,10 @@ export const Header = ({ toggleCart, toggleHamburger, navAbout }) => {
         <div className="hidden lg:flex lg:w-1/3">
           <NavBarDesktop visibility={"hidden lg:flex"} navAbout={navAbout} />
         </div>
-        <div className="lg:w-1/3">
-          <h1 className="text-3xl font-semibold">SIRI SJÖLIN</h1>
+        <div className="flex lg:w-1/3 lg:justify-center">
+          <Heading size="h1">SIRI SJÖLIN</Heading>
         </div>
-        <div>
+        <div className="lg:w-1/3 flex justify-end">
           <button onClick={toggleCart}>
             <span className="flex">
               <Bag large visibility={"lg:hidden"} />
@@ -27,6 +28,10 @@ export const Header = ({ toggleCart, toggleHamburger, navAbout }) => {
             </span>
           </button>
         </div>
+      </div>
+      <div className="flex justify-evenly bg-agile-red text-white p-2 border-t-8 border-b-8 border-waterfall-blue">
+        <Heading size="h3">INTERNSHIP SALE</Heading>
+        <Heading size="h3">ALL PRODUCTS 0 SEK</Heading>
       </div>
     </div>
   );

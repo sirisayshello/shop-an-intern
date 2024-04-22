@@ -2,6 +2,7 @@ import { CartProduct } from "../Products/CartProduct";
 import { useCart } from "../../hooks/useCart";
 import { Button } from "../Button/Button";
 import { useEffect, useState } from "react";
+import { Heading } from "../Heading/Heading";
 
 export const Cart = ({ isOpen, toggleCart }) => {
   const { cart, removeFromCart, numberOfProducts } = useCart();
@@ -25,7 +26,7 @@ export const Cart = ({ isOpen, toggleCart }) => {
       </div>
       {emptyCart && (
         <div className="flex justify-center items-center w-full h-full">
-          <h2>CART IS EMPTY</h2>
+          <Heading size={"h2"}>CART IS EMPTY</Heading>
         </div>
       )}
       <div className="flex flex-col gap-4 p-6 overflow-y-scroll no-scrollbar">
@@ -55,14 +56,14 @@ export const Cart = ({ isOpen, toggleCart }) => {
       )}
       {showCheckout && (
         <div className="p-6 flex flex-col gap-4 border-t-[1px] border-black">
-          <h2>CHOOSE PAYMENT</h2>
+          <Heading size="h2">CHOOSE PAYMENT</Heading>
           <form className="flex flex-col gap-4" action="">
             <div className="flex gap-4">
-              <label for="coffee">COFFEE</label>
+              <label htmlFor="coffee">COFFEE</label>
               <input type="checkbox" name="coffee" value="cofee" />
             </div>
             <div className="flex gap-4">
-              <label for="encouragement">ENCOURAGEMENT</label>
+              <label htmlFor="encouragement">ENCOURAGEMENT</label>
               <input
                 type="checkbox"
                 name="encouragement"
@@ -70,11 +71,11 @@ export const Cart = ({ isOpen, toggleCart }) => {
               />
             </div>
             <div className="flex gap-4">
-              <label for="highfives">HIGH-FIVES</label>
+              <label htmlFor="highfives">HIGH-FIVES</label>
               <input type="checkbox" name="highfives" value="highfives" />
             </div>
             <div className="flex gap-4">
-              <label for="endlessgratitude">ENDLESS GRATITUDE</label>
+              <label htmlFor="endlessgratitude">ENDLESS GRATITUDE</label>
               <input
                 type="checkbox"
                 name="endlessgratitude"
@@ -82,7 +83,7 @@ export const Cart = ({ isOpen, toggleCart }) => {
               />
             </div>
             <div className="flex gap-4">
-              <label for="knowledge">KNOWLEDGE</label>
+              <label htmlFor="knowledge">KNOWLEDGE</label>
               <input type="checkbox" name="knowledge" value="knowledge" />
             </div>
           </form>

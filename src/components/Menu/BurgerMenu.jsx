@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { CloseButton } from "./CloseButton";
+import { Heading } from "../Heading/Heading";
 
 export const BurgerMenu = ({ hamburgerOpen, toggleHamburger, navAbout }) => {
   const position = hamburgerOpen ? "left-0" : "-left-[480px]";
@@ -51,18 +52,18 @@ export const BurgerMenu = ({ hamburgerOpen, toggleHamburger, navAbout }) => {
           </ul>
         </nav>
       </div>
-      <div>
-        <div>
-          <h2>LIA EXPRESS</h2>
-          <h3>Platform for intern-company connections</h3>
+      <div className="overflow-y-scroll no-scrollbar">
+        <div className="bg-[url('../public/assets/img/lia.png')] bg-cover h-64">
+          <Heading size="h3">LIA EXPRESS</Heading>
+          <Heading size="h4">Platform for intern-company connections</Heading>
         </div>
-        <div>
-          <h2>PAT THE CAT</h2>
-          <h3>A useless website</h3>
+        <div className="bg-[url('../public/assets/img/cat.png')] bg-cover h-64">
+          <Heading size="h3">PAT THE CAT</Heading>
+          <Heading size="h4">A useless website</Heading>
         </div>
-        <div>
-          <h2>ISLE OF DOGS</h2>
-          <h3>Hotelbooking for Yrgopelago</h3>
+        <div className="bg-[url('../public/assets/img/belmond.png')] bg-cover h-64">
+          <Heading size="h3">ISLE OF DOGS</Heading>
+          <Heading size="h4">Hotelbooking for Yrgopelago</Heading>
         </div>
       </div>
     </div>

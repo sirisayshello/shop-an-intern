@@ -1,9 +1,10 @@
 import { useCart } from "../../hooks/useCart";
+import { Heading } from "../Heading/Heading";
 import { Bag } from "./Bag";
 
 export const Product = ({ product }) => {
   const cart = useCart();
-  const color = product.available ? "black" : "agile-red";
+  const color = product.available ? "text-black" : "text-agile-red";
   const handleClick = () => {
     cart.addToCart(product);
   };
@@ -24,10 +25,8 @@ export const Product = ({ product }) => {
         </div>
       </div>
       <div className="flex flex-col px-6 py-4 h-32 bg-white">
-        <h3>{product.name}</h3>
-        <p className={`text-xs text-${color} lg:text-sm`}>
-          {product.description}
-        </p>
+        <Heading size={"h3"}>{product.name}</Heading>
+        <p className={`text-xs ${color} lg:text-sm`}>{product.description}</p>
       </div>
     </div>
   );
