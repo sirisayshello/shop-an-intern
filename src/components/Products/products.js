@@ -5,7 +5,7 @@ export const products =
       id: 1,
       description: "I know some react, i like it very much.",
       image: "assets/img/tech/react.png",
-      alt: "",
+      alt: "react logo",
       available: true
     },
     {
@@ -13,7 +13,7 @@ export const products =
       id: 2,
       description: "Tailwind is really nice.",
       image: "assets/img/tech/tailwind.png",
-      alt: "",
+      alt: "tailwind logo",
       available: true
     },
     {
@@ -21,39 +21,39 @@ export const products =
       id: 3,
       description: "Some experience using Laravel.",
       image: "assets/img/tech/laravel.png",
-      alt: "",
-      available: true
-    },
-    {
-      name: "SQL",
-      id: 4,
-      description: "I know some SQL, i like it.",
-      image: "assets/img/tech/sql.png",
-      alt: "",
-      available: true
-    },
-    {
-      name: "PHP",
-      id: 5,
-      description: "I know some PHP, i like it.",
-      image: "assets/img/tech/php.png",
-      alt: "",
-      available: true
-    },
-    {
-      name: "C#",
-      id: 6,
-      description: "I know some C#, i like it.",
-      image: "assets/img/tech/c.png",
-      alt: "",
+      alt: "laravel logo",
       available: true
     },
     {
       name: "JAVASCRIPT",
-      id: 7,
+      id: 4,
       description: "I know JavaScript, i like it.",
       image: "assets/img/tech/js.png",
-      alt: "",
+      alt: "javascript logo",
+      available: true
+    },
+    {
+      name: "SQL",
+      id: 5,
+      description: "I know some SQL, i like it.",
+      image: "assets/img/tech/sql.png",
+      alt: "sql logo",
+      available: true
+    },
+    {
+      name: "PHP",
+      id: 6,
+      description: "I know some PHP, i like it.",
+      image: "assets/img/tech/php.png",
+      alt: "php logo",
+      available: true
+    },
+    {
+      name: "C#",
+      id: 7,
+      description: "I know some C#, i like it.",
+      image: "assets/img/tech/c.png",
+      alt: "c# logo",
       available: true
     },
     {
@@ -61,7 +61,7 @@ export const products =
       id: 8,
       description: "Some experience using Node",
       image: "assets/img/tech/node.png",
-      alt: "",
+      alt: "node.js logo",
       available: true
     },
     {
@@ -69,7 +69,7 @@ export const products =
       id: 9,
       description: "Some experience using Supabase.",
       image: "assets/img/tech/supabase.png",
-      alt: "",
+      alt: "supabase logo",
       available: true
     },
     {
@@ -77,7 +77,7 @@ export const products =
       id: 10,
       description: "Some experience using Supabase.",
       image: "assets/img/tech/datocms.png",
-      alt: "",
+      alt: "datocms logo",
       available: true
     },
     {
@@ -85,7 +85,7 @@ export const products =
       id: 11,
       description: "COMING SOON",
       image: "assets/img/tech/typescript.png",
-      alt: "",
+      alt: "typescript logo",
       available: false
     },
     {
@@ -93,7 +93,7 @@ export const products =
       id: 12,
       description: "COMING SOON",
       image: "assets/img/tech/next.png",
-      alt: "",
+      alt: "next.js logo",
       available: false
     },
     {
@@ -101,7 +101,7 @@ export const products =
       id: 13,
       description: "COMING SOON",
       image: "assets/img/tech/sanity.png",
-      alt: "",
+      alt: "sanity logo",
       available: false
     },
     {
@@ -109,7 +109,7 @@ export const products =
       id: 14,
       description: "COMING SOON",
       image: "assets/img/tech/graphql.png",
-      alt: "",
+      alt: "graphQL logo",
       available: false
     },
   ]
