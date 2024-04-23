@@ -69,12 +69,6 @@ export const BurgerMenu = ({ hamburgerOpen, toggleHamburger, navAbout }) => {
               <Heading size="h5">A useless website</Heading>
             </div>
           </a>
-          <a href="https://sirisjolin.se/cockapoo-palace/" target="_blank">
-            <div className="pt-6">
-              <Heading size="h4">ISLE OF DOGS</Heading>
-              <Heading size="h5">Hotelbooking for Yrgopelago</Heading>
-            </div>
-          </a>
         </div>
       </div>
     </div>

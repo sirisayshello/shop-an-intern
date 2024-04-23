@@ -3,7 +3,7 @@ import { Heading } from "../Heading/Heading";
 
 export const Hero = ({ scrollToProducts }) => {
   return (
-    <div className="h-[calc(80vh-124px)] flex flex-col justify-end items-center text-center pt-16">
+    <div className="h-[calc(80vh-124px)] pt-[216px] flex flex-col justify-end items-center text-center">
       <div className="flex flex-col gap-8 w-1/2 items-center pb-8">
         <div>
           <Heading size={"h2"}>Explore the latest skills drop</Heading>

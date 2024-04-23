@@ -22,7 +22,7 @@ export const Cart = ({ isOpen, toggleCart }) => {
 
   return (
     <div
-      className={`bg-white z-20 fixed flex flex-col h-screen w-[min(480px,100vw)] ${position} transition-all ease-in duration-300`}
+      className={`bg-white z-20 fixed flex flex-col h-dvh w-[min(480px,100vw)] ${position} transition-all ease-in duration-300`}
     >
       <div className="flex justify-between p-6 border-b-[1px] border-black">
         <p>CART ({numberOfProducts})</p>

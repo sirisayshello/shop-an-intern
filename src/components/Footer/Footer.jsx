@@ -28,10 +28,6 @@ export const Footer = forwardRef((_, ref) => {
             <p className="hover:text-black/50">PAT THE CAT</p>
             <Heading size="h5">A useless website</Heading>
           </a>
-          <a href="https://sirisjolin.se/cockapoo-palace/" target="_blank">
-            <p className="hover:text-black/50">ISLE OF DOGS</p>
-            <Heading size="h5">Hotelbooking for Yrgopelago</Heading>
-          </a>
         </div>
       </div>
       <div className="flex gap-8 border-t border-black px-6 py-8">
