@@ -14,7 +14,7 @@ export const BurgerMenu = ({ hamburgerOpen, toggleHamburger, navAbout }) => {
           <CloseButton large onClick={toggleHamburger} />
         </button>
       </div>
-      <div className="">
+      <div>
         <nav>
           <ul className="flex flex-col">
             <li>
@@ -52,18 +52,29 @@ export const BurgerMenu = ({ hamburgerOpen, toggleHamburger, navAbout }) => {
           </ul>
         </nav>
       </div>
-      <div className="overflow-y-scroll no-scrollbar">
-        <div className="bg-[url('../public/assets/img/lia.png')] bg-cover h-64">
-          <Heading size="h3">LIA EXPRESS</Heading>
-          <Heading size="h4">Platform for intern-company connections</Heading>
-        </div>
-        <div className="bg-[url('../public/assets/img/cat.png')] bg-cover h-64">
-          <Heading size="h3">PAT THE CAT</Heading>
-          <Heading size="h4">A useless website</Heading>
-        </div>
-        <div className="bg-[url('../public/assets/img/belmond.png')] bg-cover h-64">
-          <Heading size="h3">ISLE OF DOGS</Heading>
-          <Heading size="h4">Hotelbooking for Yrgopelago</Heading>
+      <div className="p-6">
+        <p>PROJECTS</p>
+        <div className="overflow-y-scroll no-scrollbar">
+          <a href="https://lia-app.vercel.app/" target="_blank">
+            <div className="pt-6">
+              <Heading size="h4">LIA EXPRESS</Heading>
+              <Heading size="h5">
+                Platform for intern-company connections
+              </Heading>
+            </div>
+          </a>
+          <a href="https://patthecat.netlify.app/" target="_blank">
+            <div className="pt-6">
+              <Heading size="h4">PAT THE CAT</Heading>
+              <Heading size="h5">A useless website</Heading>
+            </div>
+          </a>
+          <a href="https://sirisjolin.se/cockapoo-palace/" target="_blank">
+            <div className="pt-6">
+              <Heading size="h4">ISLE OF DOGS</Heading>
+              <Heading size="h5">Hotelbooking for Yrgopelago</Heading>
+            </div>
+          </a>
         </div>
       </div>
     </div>
