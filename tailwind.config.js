@@ -21,6 +21,7 @@ export default {
       animation: {
 				fade: 'fadeIn .3s ease-in-out',
 				'fade-out': 'fadeOut .3s ease-in-out',
+        'infinite-scroll': 'infinite-scroll 15s linear infinite',
 			},
 			keyframes: {
 				fadeIn: {
@@ -31,6 +32,10 @@ export default {
 					from: { opacity: 1 },
 					to: { opacity: 0 },
 				},
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
 			}
     }
   },

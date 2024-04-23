@@ -29,9 +29,23 @@ export const Header = ({ toggleCart, toggleHamburger, navAbout }) => {
           </button>
         </div>
       </div>
-      <div className="flex justify-evenly bg-agile-red text-white p-2 border-t-8 border-b-8 border-waterfall-blue">
-        <Heading size="h3">INTERNSHIP SALE</Heading>
-        <Heading size="h3">ALL PRODUCTS 0 SEK</Heading>
+      <div className="w-full inline-flex flex-nowrap bg-agile-red whitespace-nowrap">
+        <div className="flex flex-nowrap text-white py-2 px-8 gap-48 animate-infinite-scroll">
+          <p>ALL PRODUCTS 0 SEK</p>
+          <p>INTERNSHIP SALE</p>
+        </div>
+        <div className="flex flex-nowrap text-white py-2 px-8 gap-48 animate-infinite-scroll">
+          <p>ALL PRODUCTS 0 SEK</p>
+          <p>INTERNSHIP SALE</p>
+        </div>
+        <div className="flex flex-nowrap text-white py-2 px-8 gap-48 animate-infinite-scroll">
+          <p>ALL PRODUCTS 0 SEK</p>
+          <p>INTERNSHIP SALE</p>
+        </div>
+        <div className="flex flex-nowrap text-white py-2 px-8 gap-48 animate-infinite-scroll">
+          <p>ALL PRODUCTS 0 SEK</p>
+          <p>INTERNSHIP SALE</p>
+        </div>
       </div>
     </div>
   );
