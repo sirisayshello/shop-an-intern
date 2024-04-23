@@ -13,6 +13,7 @@ function App() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [showOverlay, setShowOverlay] = useState(false);
   const footerRef = useRef();
+  const productContainerRef = useRef();
 
   useEffect(() => {
     if (isOpen || hamburgerOpen) {
@@ -38,6 +39,11 @@ function App() {
     setHamburgerOpen(false);
     setIsOpen(false);
   };
+  const scrollToProducts = () => {
+    productContainerRef.current.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
 
   return (
     <CartProvider>
@@ -59,8 +65,8 @@ function App() {
           toggleHamburger={toggleHamburger}
           navAbout={navAbout}
         />
-        <Hero />
-        <ProductContainer />
+        <Hero scrollToProducts={scrollToProducts} />
+        <ProductContainer ref={productContainerRef} />
         <Footer ref={footerRef} />
       </main>
     </CartProvider>

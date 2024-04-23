@@ -1,6 +1,6 @@
 export const Heading = ({ size, children }) => {
   if (size === "h2") {
-    return <h2>{children}</h2>;
+    return <h2 className="text-2xl">{children}</h2>;
   }
   if (size === "h3") {
     return <h3 className="font-medium">{children}</h3>;

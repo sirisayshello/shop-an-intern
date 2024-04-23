@@ -31,7 +31,7 @@ export const Checkout = ({ onSubmit }) => {
           <input type="checkbox" name="knowledge" value="knowledge" />
         </div>
       </div>
-      <div>
+      <div className="flex flex-col gap-4">
         <div className="flex justify-between">
           <Heading size={"h3"}>TOTAL</Heading>
           <Heading size={"h3"}>0 SEK</Heading>
