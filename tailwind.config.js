@@ -10,7 +10,7 @@ export default {
         sans: ['"Inter"', 'ui-sans-serif', 'system-ui']
       },
       backgroundImage: {
-        'hero-img': "url('assets/img/horsemane.jpg')",
+        'hero-img': "url('img/horsemane.jpg')",
     },
       colors: {
         'agile-red': '#BD2400',
