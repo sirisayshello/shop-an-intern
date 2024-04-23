@@ -3,16 +3,20 @@ import { useCart } from "../../hooks/useCart";
 import { Button } from "../Button/Button";
 import { useEffect, useState } from "react";
 import { Heading } from "../Heading/Heading";
+import { Confirmation } from "./Confirmation";
+import { Checkout } from "./Checkout";
 
 export const Cart = ({ isOpen, toggleCart }) => {
   const { cart, removeFromCart, numberOfProducts } = useCart();
   const position = isOpen ? "right-0" : "-right-[480px]";
   const emptyCart = numberOfProducts === 0;
   const [showCheckout, setShowCheckout] = useState(false);
+  const [showConfirmation, setShowConfirmation] = useState(false);
 
   useEffect(() => {
     if (numberOfProducts === 0) {
       setShowCheckout(false);
+      setShowConfirmation(false);
     }
   }, [numberOfProducts]);
 
@@ -42,6 +46,7 @@ export const Cart = ({ isOpen, toggleCart }) => {
       </div>
       {!emptyCart && !showCheckout && (
         <div className="flex flex-col gap-4 p-6 border-t-[1px] border-black">
+          <p className="text-xs">Estimated arrival on: November 25 2024</p>
           <div className="flex justify-between">
             <label>TOTAL</label>
             <p>0 SEK</p>
@@ -54,48 +59,14 @@ export const Cart = ({ isOpen, toggleCart }) => {
           />
         </div>
       )}
-      {showCheckout && (
-        <div className="p-6 flex flex-col gap-4 border-t-[1px] border-black">
-          <Heading size="h2">CHOOSE PAYMENT</Heading>
-          <form className="flex flex-col gap-4" action="">
-            <div className="flex gap-4">
-              <label htmlFor="coffee">COFFEE</label>
-              <input type="checkbox" name="coffee" value="cofee" />
-            </div>
-            <div className="flex gap-4">
-              <label htmlFor="encouragement">ENCOURAGEMENT</label>
-              <input
-                type="checkbox"
-                name="encouragement"
-                value="encouragement"
-              />
-            </div>
-            <div className="flex gap-4">
-              <label htmlFor="highfives">HIGH-FIVES</label>
-              <input type="checkbox" name="highfives" value="highfives" />
-            </div>
-            <div className="flex gap-4">
-              <label htmlFor="endlessgratitude">ENDLESS GRATITUDE</label>
-              <input
-                type="checkbox"
-                name="endlessgratitude"
-                value="endlessgratitude"
-              />
-            </div>
-            <div className="flex gap-4">
-              <label htmlFor="knowledge">KNOWLEDGE</label>
-              <input type="checkbox" name="knowledge" value="knowledge" />
-            </div>
-          </form>
-          <div className="flex justify-between">
-            <label>TOTAL</label>
-            <p>0 SEK</p>
-          </div>
-          <a href="mailto:siri.sjolin@hotmail.com">
-            <Button text={"PLACE ORDER"} />
-          </a>
-        </div>
+      {showCheckout && !showConfirmation && (
+        <Checkout
+          onSubmit={() => {
+            setShowConfirmation(true);
+          }}
+        />
       )}
+      {showConfirmation && <Confirmation />}
     </div>
   );
 };
