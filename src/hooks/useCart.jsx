@@ -12,7 +12,10 @@ export const CartProvider = ({ children }) => {
     const filteredCart = cart.filter((product) => productName !== product.name);
     setCart(filteredCart);
   };
-  const productIsInCart = () => {};
+  const productIsInCart = (productName) => {
+    return cart.some((product) => product.name === productName);
+  };
+
   return (
     <CartContext.Provider
       value={{
