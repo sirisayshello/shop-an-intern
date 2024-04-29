@@ -18,7 +18,7 @@ export const Header = ({ toggleCart, toggleHamburger, navAbout }) => {
           <Heading size="h1">SIRI SJÖLIN</Heading>
         </div>
         <div className="lg:w-1/3 flex justify-end">
-          <button onClick={toggleCart}>
+          <button aria-label="open cart" onClick={toggleCart}>
             <span className="flex">
               <Bag large visibility={"lg:hidden"} />
               <span className="lg:hidden w-[22px] h-[28px] absolute text-xs flex justify-center items-end">

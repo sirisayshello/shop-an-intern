@@ -19,14 +19,12 @@ export const Footer = forwardRef((_, ref) => {
           <a href="https://lia-app.vercel.app/" target="_blank">
             <div className="flex flex-col justify-center">
               <p className="hover:text-black/50">LIA EXPRESS</p>
-              <Heading size="h5">
-                Platform for intern-company connections
-              </Heading>
+              <p className="text-sm">Platform for intern-company connections</p>
             </div>
           </a>
           <a href="https://patthecat.netlify.app/" target="_blank">
             <p className="hover:text-black/50">PAT THE CAT</p>
-            <Heading size="h5">A useless website</Heading>
+            <p className="text-sm">A useless website</p>
           </a>
         </div>
       </div>

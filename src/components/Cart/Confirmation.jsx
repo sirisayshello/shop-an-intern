@@ -10,10 +10,8 @@ export const Confirmation = () => {
           discussing internship opportunities, let's grab a coffee. To reach out
           (since you probably didn't send that email), you'll find contact
           information below.
-          <br />
-          <br />
-          Best regards, Siri
         </p>
+        <p className="text-sm">Best regards, Siri</p>
       </div>
       <div className="flex justify-center items-center gap-8 mt-4">
         <a

@@ -26,7 +26,9 @@ export const Cart = ({ isOpen, toggleCart }) => {
     >
       <div className="flex justify-between p-6 border-b-[1px] border-black">
         <p>CART ({numberOfProducts})</p>
-        <button onClick={toggleCart}>CLOSE</button>
+        <button aria-label="close cart" onClick={toggleCart}>
+          CLOSE
+        </button>
       </div>
       {emptyCart && (
         <div className="flex justify-center items-center w-full h-full">
@@ -52,6 +54,7 @@ export const Cart = ({ isOpen, toggleCart }) => {
             <p>0 SEK</p>
           </div>
           <Button
+            aria-label="go to checkout"
             onClick={() => {
               setShowCheckout(true);
             }}

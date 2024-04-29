@@ -37,7 +37,11 @@ export const Checkout = ({ onSubmit }) => {
           <Heading size={"h3"}>0 SEK</Heading>
         </div>
         <a href="mailto:siri.sjolin@hotmail.com">
-          <Button onClick={onSubmit} text={"PLACE ORDER"} />
+          <Button
+            aria-label="place order"
+            onClick={onSubmit}
+            text={"PLACE ORDER"}
+          />
         </a>
       </div>
     </div>

@@ -11,7 +11,7 @@ export const CartProduct = ({ product, removeFromCart }) => {
       <div className="w-full flex flex-col justify-between">
         <div className="flex pl-4 justify-between">
           <Heading size="h3">{product.name}</Heading>
-          <button onClick={handleCLick}>
+          <button aria-label={`remove ${product.name}`} onClick={handleCLick}>
             <CloseButton />
           </button>
         </div>

@@ -10,7 +10,7 @@ export const BurgerMenu = ({ hamburgerOpen, toggleHamburger, navAbout }) => {
       className={`bg-white z-20 top-0 fixed flex flex-col h-screen w-[min(480px,100vw)] ${position} transition-all ease-in duration-300`}
     >
       <div className="p-6 border-b-[1px] border-black">
-        <button>
+        <button aria-label="close menu">
           <CloseButton large onClick={toggleHamburger} />
         </button>
       </div>
@@ -57,16 +57,14 @@ export const BurgerMenu = ({ hamburgerOpen, toggleHamburger, navAbout }) => {
         <div className="overflow-y-scroll no-scrollbar">
           <a href="https://lia-app.vercel.app/" target="_blank">
             <div className="pt-6">
-              <Heading size="h4">LIA EXPRESS</Heading>
-              <Heading size="h5">
-                Platform for intern-company connections
-              </Heading>
+              <p className="text-sm font-medium">LIA EXPRESS</p>
+              <p className="text-sm">Platform for intern-company connections</p>
             </div>
           </a>
           <a href="https://patthecat.netlify.app/" target="_blank">
             <div className="pt-6">
-              <Heading size="h4">PAT THE CAT</Heading>
-              <Heading size="h5">A useless website</Heading>
+              <p className="text-sm font-medium">PAT THE CAT</p>
+              <p className="text-sm">A useless website</p>
             </div>
           </a>
         </div>

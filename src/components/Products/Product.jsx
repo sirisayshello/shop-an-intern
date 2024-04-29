@@ -19,9 +19,10 @@ export const Product = ({ product }) => {
   return (
     <div className="flex flex-col w-1/2 lg:w-1/4">
       <div className="relative group w-full h-full flex flex-col overflow-hidden">
-        <img className="w-full h-full" src={product.image} alt={product.alt} />
+        <img className="h-full w-full" src={product.image} alt={product.alt} />
         <div className="hidden lg:flex absolute w-full bottom-[-3rem] group-hover:bottom-0 transition-all bg-white p-4 justify-center items-center">
           <button
+            aria-label={`add ${product.name} to cart`}
             className="w-full flex justify-center"
             onClick={handleClick}
             disabled={disabled}
@@ -31,7 +32,11 @@ export const Product = ({ product }) => {
           </button>
         </div>
         <div className="absolute bottom-0 right-0 h-12 px-4 flex justify-end items-center lg:hidden">
-          <button onClick={handleClick} disabled={disabled}>
+          <button
+            aria-label={`add ${product.name} to cart`}
+            onClick={handleClick}
+            disabled={disabled}
+          >
             <Bag visibility={bagIcon} />
             <Check visibility={outOfStock} />
           </button>

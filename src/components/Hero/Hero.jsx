@@ -12,10 +12,14 @@ export const Hero = ({ scrollToProducts }) => {
             packages.
           </p>
         </div>
-        <Button text={"SHOP NOW"} onClick={scrollToProducts} />
+        <Button
+          aria-label="shop now"
+          text={"SHOP NOW"}
+          onClick={scrollToProducts}
+        />
         <p className="text-xs">
-          (Also, I'm a web developer student currently seeking an internship.
-          This is my portfolio.)
+          Actually I'm just a web developer student currently seeking an
+          internship. This is my portfolio.
         </p>
       </div>
     </div>
