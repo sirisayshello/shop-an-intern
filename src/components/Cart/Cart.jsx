@@ -50,7 +50,7 @@ export const Cart = ({ isOpen, toggleCart }) => {
         <div className="flex flex-col gap-4 p-6 border-t-[1px] border-black">
           <p className="text-xs">Estimated arrival on: November 25 2024</p>
           <div className="flex justify-between">
-            <label>TOTAL</label>
+            <p>TOTAL</p>
             <p>0 SEK</p>
           </div>
           <Button
